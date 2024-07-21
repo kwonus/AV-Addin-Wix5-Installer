@@ -1,0 +1,21 @@
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Fragment>
+    <StandardDirectory Id="ProgramFiles6432Folder">
+      <Directory Id="ADDIN_FOLDER" Name="!(bind.Property.Manufacturer)\AV-Bible-Addin" />
+      <Directory Id="MANAGER_FOLDER" Name="!(bind.Property.Manufacturer)\AV-Bible-Addin\Manager" />
+      <Directory Id="DATA_FOLDER" Name="!(bind.Property.Manufacturer)\AV-Bible-Addin\Manager\Data" />
+    </StandardDirectory>
+  </Fragment>
+  <Fragment>
+    <CustomAction Id="EXECUTE_AFTER_FINALIZE"
+                      Execute="immediate"
+                      Impersonate="yes"
+                      Return="asyncNoWait"
+                      ExeCommand = ""
+                      FileRef="MANAGER_EXE" />
+
+    <InstallExecuteSequence>
+      <Custom Action="EXECUTE_AFTER_FINALIZE" After="InstallFinalize"/>
+    </InstallExecuteSequence>
+  </Fragment>
+</Wix>

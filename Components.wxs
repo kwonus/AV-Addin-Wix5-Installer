@@ -1,0 +1,49 @@
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Fragment>
+    <ComponentGroup Id="AV_Bible_Addin" Directory="ADDIN_FOLDER">
+      <Component Guid="19F87437-07D3-4A12-A014-8F6AE43E62F7">
+        <File Source="C:\src\AV-Bible-Addin\bin\Release\AV-Bible-Addin.dll" />
+        <File Source="C:\src\AV-Bible-Addin\bin\Release\AV-Bible-Addin.dll.manifest" />
+        <File Source="C:\src\AV-Bible-Addin\bin\Release\AV-Bible-Addin.vsto" />
+        <File Source="C:\src\AV-Bible-Addin\bin\Release\Microsoft.Office.Tools.Common.v4.0.Utilities.dll" />
+        <File Source="C:\src\AV-Bible-Addin\bin\Release\YamlDotNet.dll" />
+        <File Source="C:\src\AV-Bible-Addin\bin\Release\YamlDotNet.xml" />
+        <RegistryKey Root="HKCU" Key="Software\Microsoft\Office\Word\Addins\AV-Bible-Addin">
+          <RegistryValue Type="integer" Name="LoadBehavior" Value="3" />
+          <RegistryValue Type="string" Name="Description" Value="AV-Bible-Addin" />
+          <RegistryValue Type="string" Name="FriendlyName" Value="AV-Bible Addin for Microsoft Word" />
+          <RegistryValue Type="string" Name="Manifest" Value="file:///C:/Program Files/Digital-AV/AV-Bible-Addin/AV-Bible-Addin.vsto|vstolocal" KeyPath="yes" />
+        </RegistryKey>
+      </Component>
+    </ComponentGroup>
+    <ComponentGroup Id="AV_Bible_Addin_Manager" Directory="MANAGER_FOLDER">
+      <Component Guid="2AFFB81C-329F-44E3-AB96-B2D262C7801D">
+        <File Source="C:\src\AV-Data-Manager\bin\Release\net8.0-windows7.0\AV-API.dll"/>
+        <File Source="C:\src\AV-Data-Manager\bin\Release\net8.0-windows7.0\AV-Data-Manager.deps.json"/>
+        <File Source="C:\src\AV-Data-Manager\bin\Release\net8.0-windows7.0\AV-Data-Manager.dll"/>
+        <File Source="C:\src\AV-Data-Manager\bin\Release\net8.0-windows7.0\AV-Data-Manager.exe" Id="MANAGER_EXE" />
+        <File Source="C:\src\AV-Data-Manager\bin\Release\net8.0-windows7.0\AV-Data-Manager.runtimeconfig.json"/>
+        <File Source="C:\src\AV-Data-Manager\bin\Release\net8.0-windows7.0\AV-Engine.dll"/>
+        <File Source="C:\src\AV-Data-Manager\bin\Release\net8.0-windows7.0\AV-Search.dll"/>
+        <File Source="C:\src\AV-Data-Manager\bin\Release\net8.0-windows7.0\AVXLib.dll"/>
+        <File Source="C:\src\AV-Data-Manager\bin\Release\net8.0-windows7.0\Blueprint-Blue-Lib.dll"/>
+        <File Source="C:\src\AV-Data-Manager\bin\Release\net8.0-windows7.0\PhonemeEmbeddings.dll"/>
+        <File Source="C:\src\AV-Data-Manager\bin\Release\net8.0-windows7.0\YamlDotNet.dll"/>
+        <File Source="C:\src\AV-Data-Manager\bin\Release\net8.0-windows7.0\appsettings.json"/>
+        <File Source="C:\src\AV-Data-Manager\bin\Release\net8.0-windows7.0\libman.json"/>
+        <File Source="C:\src\AV-Data-Manager\bin\Release\net8.0-windows7.0\pinshot_blue.dll"/>
+        <RegistryKey Root="HKCU" Key="Software\Microsoft\Windows\CurrentVersion\Run">
+          <RegistryValue Type="string" Name="AV-Bible-Addin-Manager" Value="C:\Program Files\Digital-AV\AV-Bible-Addin\Manager\AV-Data-Manager.exe" KeyPath="yes"/>
+        </RegistryKey>
+      </Component>
+    </ComponentGroup>
+    <ComponentGroup Id="AV_Bible_Addin_Data" Directory="DATA_FOLDER">
+      <Component Guid="30FAC242-573A-4E74-A606-72716BCE9ECD">
+        <File Source="C:\src\AV-Data-Manager\bin\Release\net8.0-windows7.0\Data\AVX-Omega.data"/>
+        <File Source="C:\src\AV-Data-Manager\bin\Release\net8.0-windows7.0\Data\AVX-Omega.md5"/>
+        <File Source="C:\src\AV-Data-Manager\bin\Release\net8.0-windows7.0\Data\AVX-Omega.txt"/>
+        <File Source="C:\src\AV-Data-Manager\bin\Release\net8.0-windows7.0\Data\en_US.txt"/>
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>
