@@ -2,7 +2,7 @@
 
   <Package Name="AV-Bible Addin for Microsoft Word" Manufacturer="DigitalAV" Version="9.24.12.27" UpgradeCode="1e5a748f-0470-4e51-a25c-c66e5c9421d8">
     <Upgrade Id="1e5a748f-0470-4e51-a25c-c66e5c9421d8">
-      <UpgradeVersion OnlyDetect="no" Property="PREVIOUSFOUND" Minimum="4.7.1" IncludeMinimum="yes" IncludeMaximum="no"/>
+      <UpgradeVersion OnlyDetect="no" Property="PREVIOUSFOUND" Minimum="9.24.12.27" IncludeMinimum="yes" IncludeMaximum="no"/>
     </Upgrade>
     <InstallExecuteSequence>
       <RemoveExistingProducts Before="InstallInitialize" />
