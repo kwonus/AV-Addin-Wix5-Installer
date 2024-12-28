@@ -12,33 +12,33 @@
           <RegistryValue Type="integer" Name="LoadBehavior" Value="3" />
           <RegistryValue Type="string" Name="Description" Value="AV-Bible-Addin" />
           <RegistryValue Type="string" Name="FriendlyName" Value="AV-Bible Addin for Microsoft Word" />
-          <RegistryValue Type="string" Name="Manifest" Value="file:///C:/Program Files/Digital-AV/AV-Bible-Addin/AV-Bible-Addin.vsto|vstolocal" KeyPath="yes" />
+          <RegistryValue Type="string" Name="Manifest" Value="file:///C:/Program Files/DigitalAV/AV-Bible-Addin/AV-Bible-Addin.vsto|vstolocal" KeyPath="yes" />
         </RegistryKey>
       </Component>
     </ComponentGroup>
     <ComponentGroup Id="AV_Bible_Addin_Manager" Directory="MANAGER_FOLDER">
       <Component Guid="2AFFB81C-329F-44E3-AB96-B2D262C7801D">
-        <File Source="C:\src\AV-Data-Manager\bin\Release\net8.0-windows7.0\publish\win-x64\AV-Data-Manager.exe" Id="MANAGER_EXE" />
-        <File Source="C:\src\AV-Data-Manager\bin\Release\net8.0-windows7.0\publish\win-x64\aspnetcorev2_inprocess.dll"/>
-        <File Source="C:\src\AV-Data-Manager\bin\Release\net8.0-windows7.0\publish\win-x64\D3DCompiler_47_cor3.dll"/>
-        <File Source="C:\src\AV-Data-Manager\bin\Release\net8.0-windows7.0\publish\win-x64\PenImc_cor3.dll"/>
-        <File Source="C:\src\AV-Data-Manager\bin\Release\net8.0-windows7.0\publish\win-x64\PresentationNative_cor3.dll"/>
-        <File Source="C:\src\AV-Data-Manager\bin\Release\net8.0-windows7.0\publish\win-x64\vcruntime140_cor3.dll"/>
-        <File Source="C:\src\AV-Data-Manager\bin\Release\net8.0-windows7.0\publish\win-x64\wpfgfx_cor3.dll"/>
-        <File Source="C:\src\AV-Data-Manager\bin\Release\net8.0-windows7.0\publish\win-x64\libman.json"/>
-        <File Source="C:\src\AV-Data-Manager\bin\Release\net8.0-windows7.0\publish\win-x64\appsettings.json"/>
-        <File Source="C:\src\AV-Data-Manager\bin\Release\net8.0-windows7.0\publish\win-x64\pinshot_blue.dll"/>
+        <File Source="C:\src\AV-Data-Manager\bin\published\win-x64\AV-Data-Manager.exe" Id="MANAGER_EXE" />
+        <File Source="C:\src\AV-Data-Manager\bin\published\win-x64\aspnetcorev2_inprocess.dll"/>
+        <File Source="C:\src\AV-Data-Manager\bin\published\win-x64\D3DCompiler_47_cor3.dll"/>
+        <File Source="C:\src\AV-Data-Manager\bin\published\win-x64\PenImc_cor3.dll"/>
+        <File Source="C:\src\AV-Data-Manager\bin\published\win-x64\PresentationNative_cor3.dll"/>
+        <File Source="C:\src\AV-Data-Manager\bin\published\win-x64\vcruntime140_cor3.dll"/>
+        <File Source="C:\src\AV-Data-Manager\bin\published\win-x64\wpfgfx_cor3.dll"/>
+        <File Source="C:\src\AV-Data-Manager\bin\published\win-x64\libman.json"/>
+        <File Source="C:\src\AV-Data-Manager\bin\published\win-x64\appsettings.json"/>
+        <File Source="C:\src\pinshot-blue\target\release\pinshot_blue.dll"/>
         <RegistryKey Root="HKCU" Key="Software\Microsoft\Windows\CurrentVersion\Run">
-          <RegistryValue Type="string" Name="AV-Bible-Addin-Manager" Value="C:\Program Files\Digital-AV\AV-Bible-Addin\Manager\AV-Data-Manager.exe" KeyPath="yes"/>
+          <RegistryValue Type="string" Name="AV-Bible-Addin-Manager" Value="C:\Program Files\DigitalAV\AV-Bible-Addin\Manager\AV-Data-Manager.exe" KeyPath="yes"/>
         </RegistryKey>
       </Component>
     </ComponentGroup>
     <ComponentGroup Id="AV_Bible_Addin_Data" Directory="DATA_FOLDER">
       <Component Guid="30FAC242-573A-4E74-A606-72716BCE9ECD">
-        <File Source="C:\src\AV-Data-Manager\bin\Release\net8.0-windows7.0\publish\win-x64\Data\AVX-Omega.data"/>
-        <File Source="C:\src\AV-Data-Manager\bin\Release\net8.0-windows7.0\publish\win-x64\Data\AVX-Omega.md5"/>
-        <File Source="C:\src\AV-Data-Manager\bin\Release\net8.0-windows7.0\publish\win-x64\Data\AVX-Omega.txt"/>
-        <File Source="C:\src\AV-Data-Manager\bin\Release\net8.0-windows7.0\publish\win-x64\Data\en_US.txt"/>
+        <File Source="C:\src\AV-Data-Manager\bin\Release\net8.0-windows7.0\Data\AVX-Omega.data"/>
+        <File Source="C:\src\AV-Data-Manager\bin\Release\net8.0-windows7.0\Data\AVX-Omega.md5"/>
+        <File Source="C:\src\AV-Data-Manager\bin\Release\net8.0-windows7.0\Data\AVX-Omega.txt"/>
+        <File Source="C:\src\AV-Data-Manager\bin\Release\net8.0-windows7.0\Data\en_US.txt"/>
       </Component>
     </ComponentGroup>
   </Fragment>
